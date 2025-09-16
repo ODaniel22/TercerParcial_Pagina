@@ -1,0 +1,752 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">sept 16, 2025 04:44:30 p. m.</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checkout feature</p>
+            <p class="text-sm">
+              <span>16:44:30</span> / <span>00:00:15:139</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Checkout feature</h5>
+<span class='badge badge-success'>09.16.2025 16:44:30</span>
+<span class='badge badge-danger'>09.16.2025 16:44:45</span>
+<span class='badge badge-default'>00:00:15:139</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User can checkout a purchase</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="definicionDePasos.CommonSteps.goToSauceDemoPage()">
+                <span>Given Estamos en la pagina de saucedemo</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setUserName(java.lang.String)">
+                <span>When colocamos el nombre del Usuario "standard_user"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setPassword(java.lang.String)">
+                <span>And Colocamos la contraseña "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.clickOnLogin()">
+                <span>And Hacemos click en el boton de Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.verifyHomePageIsDisplayed()">
+                <span>Given Verificamos si la pagina esta habilitada o no</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.addProductToCart(java.lang.String)">
+                <span>And Agregamos el productos "Sauce Labs Backpack" al carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="definicionDePasos.HomeSteps.addProductToCart(java.lang.String)">
+                <span>And Agregamos el productos "Sauce Labs Backpack" al carrito</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-sauce\-labs\-backpack"}
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe719de9b8a9024e3ec4831db4b44db7, findElement {using=id, value=add-to-cart-sauce-labs-backpack}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\HPVICT~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52270}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52270/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe719de9b8a9024e3ec4831db4b44db7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.HomePage.addProductToCart(HomePage.java:54)
+	at definicionDePasos.HomeSteps.addProductToCart(HomeSteps.java:21)
+	at ✽.Agregamos el productos "Sauce Labs Backpack" al carrito(file:///C:/Users/HP%20VICTUS/Documents/Certi2/Tercer%20Parcial/TercerParcial-Pagina/src/test/resources/checkout.feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="definicionDePasos.HomeSteps.clickOnCartIcon()">
+                <span>And Hacemos click al icono del carrito</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="definicionDePasos.YourCartSteps.clickOnCheckoutButton()">
+                <span>When Realizo click en checkout</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="definicionDePasos.CheckoutInformationSteps.fillCheckoutInformation(io.cucumber.datatable.DataTable)">
+                <span>And LLenamos la informacion para el checkout</span>
+      <div><table class='markup-table table '><tr><td>Oscar Daniel</td><td>Vargas Sirpa</td><td>1923</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="definicionDePasos.CheckoutInformationSteps.clickOnContinue()">
+                <span>And Hago click en el boton de continuar</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="definicionDePasos.CheckoutOverviewSteps.clickOnFinish()">
+                <span>When Hacemos Click en el boton Finish</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="definicionDePasos.CheckoutCompleteSteps.verifyCompleteMessage(java.lang.String)">
+                <span>Then Mensaje que dice "Thank you for your order!" mostrando habilitacion</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>User cannot checkout an empty purchase</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="definicionDePasos.CommonSteps.goToSauceDemoPage()">
+                <span>Given Estamos en la pagina de saucedemo</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setUserName(java.lang.String)">
+                <span>When colocamos el nombre del Usuario "standard_user"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setPassword(java.lang.String)">
+                <span>And Colocamos la contraseña "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.clickOnLogin()">
+                <span>And Hacemos click en el boton de Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.verifyHomePageIsDisplayed()">
+                <span>Given Verificamos si la pagina esta habilitada o no</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.clickOnCartIcon()">
+                <span>And Hacemos click al icono del carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.YourCartSteps.clickOnCheckoutButton()">
+                <span>When Realizo click en checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.CheckoutInformationSteps.fillCheckoutInformation(io.cucumber.datatable.DataTable)">
+                <span>And LLenamos la informacion para el checkout</span>
+      <div><table class='markup-table table '><tr><td>Oscar Daniel</td><td>Vargas Sirpa</td><td>1923</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.CheckoutInformationSteps.clickOnContinue()">
+                <span>And Hago click en el boton de continuar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.CheckoutOverviewSteps.clickOnFinish()">
+                <span>When Hacemos Click en el boton Finish</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.CheckoutCompleteSteps.verifyCompleteMessage(java.lang.String)">
+                <span>Then Mensaje que dice "Thank you for your order!" mostrando habilitacion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="definicionDePasos.CommonSteps.failedTest()">
+                <span>Then Si llegas aqui la prueba fallo</span>
+      <div>
+        <textarea disabled class="code-block">org.opentest4j.AssertionFailedError: El escenario llegó a un punto donde debía fallar.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at definicionDePasos.CommonSteps.failedTest(CommonSteps.java:21)
+	at ✽.Si llegas aqui la prueba fallo(file:///C:/Users/HP%20VICTUS/Documents/Certi2/Tercer%20Parcial/TercerParcial-Pagina/src/test/resources/checkout.feature:32)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Checkout a purchase without any information</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="definicionDePasos.CommonSteps.goToSauceDemoPage()">
+                <span>Given Estamos en la pagina de saucedemo</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setUserName(java.lang.String)">
+                <span>When colocamos el nombre del Usuario "standard_user"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setPassword(java.lang.String)">
+                <span>And Colocamos la contraseña "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.clickOnLogin()">
+                <span>And Hacemos click en el boton de Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.verifyHomePageIsDisplayed()">
+                <span>Given Verificamos si la pagina esta habilitada o no</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.addProductToCart(java.lang.String)">
+                <span>And Agregamos el productos "Sauce Labs Backpack" al carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.clickOnCartIcon()">
+                <span>And Hacemos click al icono del carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.YourCartSteps.clickOnCheckoutButton()">
+                <span>When Realizo click en checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.CheckoutInformationSteps.clickOnContinue()">
+                <span>And Hago click en el boton de continuar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.CheckoutInformationSteps.verifyErrorMessage(java.lang.String)">
+                <span>Then Nos sale un mensaje de error "Error: First Name is required"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Home page</p>
+            <p class="text-sm">
+              <span>16:44:45</span> / <span>00:00:12:278</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Home page</h5>
+<span class='badge badge-success'>09.16.2025 16:44:45</span>
+<span class='badge badge-danger'>09.16.2025 16:44:58</span>
+<span class='badge badge-default'>00:00:12:278</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log pass-bg mr-2">Pass</span>Verify the functional button Reset</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="definicionDePasos.CommonSteps.goToSauceDemoPage()">
+                <span>Given Estamos en la pagina de saucedemo</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setUserName(java.lang.String)">
+                <span>When colocamos el nombre del Usuario "standard_user"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setPassword(java.lang.String)">
+                <span>And Colocamos la contraseña "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.clickOnLogin()">
+                <span>And Hacemos click en el boton de Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.verifyHomePageIsDisplayed()">
+                <span>Given Verificamos si la pagina esta habilitada o no</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.addProductToCart(java.lang.String)">
+                <span>And Agregamos el productos "Sauce Labs Backpack" al carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.addProductToCart(java.lang.String)">
+                <span>And Agregamos el productos "Sauce Labs Bike Light" al carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.clickOnBurgerMenu()">
+                <span>And Hago click en  burguer_menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.clickOnResetButton()">
+                <span>And Hago click en  buttom reset</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.verifyHomePageAndCart()">
+                <span>And Verificamos los botones Remove</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Delete products from checkout</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="definicionDePasos.CommonSteps.goToSauceDemoPage()">
+                <span>Given Estamos en la pagina de saucedemo</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setUserName(java.lang.String)">
+                <span>When colocamos el nombre del Usuario "standard_user"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.setPassword(java.lang.String)">
+                <span>And Colocamos la contraseña "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.LoginSteps.clickOnLogin()">
+                <span>And Hacemos click en el boton de Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.verifyHomePageIsDisplayed()">
+                <span>Given Verificamos si la pagina esta habilitada o no</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.addProductToCart(java.lang.String)">
+                <span>And Agregamos el productos "Sauce Labs Backpack" al carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.addProductToCart(java.lang.String)">
+                <span>And Agregamos el productos "Sauce Labs Bike Light" al carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.HomeSteps.clickOnCartIcon()">
+                <span>And Hacemos click al icono del carrito</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.YourCartSteps.removeCheckoutElements(java.lang.String)">
+                <span>And Elimino "Sauce Labs Backpack" del carro</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.YourCartSteps.removeCheckoutElements(java.lang.String)">
+                <span>And Elimino "Sauce Labs Bike Light" del carro</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definicionDePasos.YourCartSteps.clickonBackButton()">
+                <span>And Vuelvo a la pagina principal</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.opentest4j.AssertionFailedError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.opentest4j.AssertionFailedError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:44:40 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>Then Si llegas aqui la prueba fallo</a>
+<div class="">
+<span class="badge badge-default">Checkout feature.User cannot checkout an empty purchase.Then Si llegas aqui la prueba fallo</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:44:34 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>And Agregamos el productos "Sauce Labs Backpack" al carrito</a>
+<div class="">
+<span class="badge badge-default">Checkout feature.User can checkout a purchase.And Agregamos el productos "Sauce Labs Backpack" al carrito</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>sept 16, 2025 04:44:30 p. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>sept 16, 2025 04:44:58 p. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='60%'><b>3</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='40%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='85%'><b>48</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>2</b> steps failed,
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Checkout feature":15.139,"Home page":12.278
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 3,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 48,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 6,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
